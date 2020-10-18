@@ -17,7 +17,11 @@ c.stroke();
 
 // TODO follow the instructions in the Canvas Pt. 2 Pre-Lesson to see how to build this project
 const animate = () => {
-
+  requestAnimationFrame(animate)
+  c.beginPath();
+  c.strokeStyle = "limegreen";
+  c.arc(600, 250, 50, 0, 2 * Math.PI);
+  c.stroke();
 }
 
 // animate()
